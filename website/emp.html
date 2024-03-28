@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    body {
+        background-color: #EDBB99;
+    }
+
+    form {
+        width: 300px;
+        margin: 0 auto; /* Center the form horizontally */
+        border: 2px solid;
+        padding: 20px;
+        background-color: #FAE5D3;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    input[type="number"],
+    input[type="text"] {
+        width: 95%;
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+
+    input[type="Submit"] {
+        background-color: #E67E22;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+		width: 100%;
+    }
+	
+	input[type="Submit"]:hover {
+		 background-color: #BA4A00 ;
+	}
+
+</style>
+</head>
+<body>
+    <center><h1>Employee</h1></center>
+    <form method="post" action="empReg.php">
+        <label for="txtid">Eid:</label>
+        <input type="number" name="txtid" required><br><br>
+        
+        <label for="txtt">Telephone:</label>
+        <input type="text" name="txtt" required><br><br>
+        
+        <label for="txtn">Name:</label>
+        <input type="text" name="txtn" required><br><br>
+        
+        <label for="txte">Email:</label>
+        <input type="text" name="txte" required><br><br>
+        
+        <label for="txtd">Designation:</label>
+        <input type="text" name="txtd" required><br>
+        
+        <center><input type="Submit" value="Submit"><br><br>
+				<a class="menu" href="first.html"><strong>Back</strong></a>
+		</center>
+    </form>
+</body>
+</html>

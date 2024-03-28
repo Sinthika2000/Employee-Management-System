@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    body {
+        background-color: #EDBB99;
+        font-family: Arial, sans-serif;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    form {
+        width: 300px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 2px solid #ccc;
+        background-color: #FAE5D3;
+        border-radius: 5px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="date"] {
+        width: 95%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    input[type="submit"] {
+        background-color:  #E67E22;
+        color: #333;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+		width: 100%;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #BA4A00;
+    }
+</style>
+<title>Task Registration</title>
+</head>
+<body>
+    <h2>Task Registration</h2>
+    <form action="regTask.php" method="post">
+        <label for="Tid">Tid:</label>
+        <input type="text" name="Tid" required>
+
+        <label for="Name">Name:</label>
+        <input type="text" name="Name" required>
+
+        <label for="Start_date">Start date:</label>
+        <input type="date" name="Start_date" required>
+
+        <label for="end_date">End date:</label>
+        <input type="date" name="end_date" required>
+
+        <label for="nature">Nature:</label>
+        <input type="text" name="nature" required>
+
+        <center><input type="submit" value="Register Task"><br><br>
+		<a class="menu" href="first.html"><strong>Back</strong></a></center>
+    </form>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(info-systems.jpg.optimal.JPG);
+        }
+
+        #header {
+           
+            text-align: center;
+            color: white;
+            height: 80px;
+            font-size: 28px;
+            line-height: 80px;
+           
+        }
+
+        #menu-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 80px);
+        }
+
+        #menu {
+            background-color: #ffffff;
+            width: 250px;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .menu-item {
+            display: block;
+            text-decoration: none;
+            margin-bottom: 10px;
+            color: #343a40;
+            padding: 10px;
+            border: 2px solid #343a40;
+            border-radius: 5px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+        .menu {
+            background-color: #C32F4F;
+            display: block;
+            text-decoration: none;
+            margin-bottom: 10px;
+            color: #107eed;
+            padding: 10px;
+            border: 2px solid #343a40;
+            border-radius: 5px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .menu-item:hover {
+            background-color: #FA5678 ; /* Changed menu item background color on hover to match header */
+            color: #ffffff;
+            border-color: #0056B3; /* Adjusted border color on hover */
+        }
+
+        #menu a {
+            text-decoration: none;
+            color: #343a40;
+        }
+
+        h2 {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <h2>REPORTS</h2>
+    </div>
+
+    <div id="menu-container">
+        <div id="menu">
+            <a class="menu-item" href="report.php"><strong>Assign Report</strong></a>
+            <a class="menu-item" href="all.php"><strong>Task Report</strong></a>
+            <a class="menu-item" href="er.php"><strong>Employee Report</strong></a>
+            <a class="menu-item" href="acr.php"><strong>Activity Report</strong></a>
+            <a class="menu" href="homepage.html"><strong>go to Home</strong></a>
+        </div>
+    </div>
+</body>
+
+</html>
+
